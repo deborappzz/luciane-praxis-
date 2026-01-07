@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formação Teórica - Autoridade e Segurança Pedagógica</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'acad-purple': '#2e1065', // purple-950 base
+                        'acad-gold': '#f59e0b',   // amber-500 base
+                        'acad-gold-light': '#fbbf24', // amber-400
+                        'acad-gold-dark': '#d97706', // amber-600
+                    },
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Gold Gradient Text */
+        .text-gradient-gold {
+            background: linear-gradient(to right, #fbbf24, #d97706);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Custom Shadows */
+        .premium-shadow {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+            box-shadow: 0 25px 30px -5px rgba(245, 158, 11, 0.15); /* Golden glow hint */
+        }
+    </style>
+</head>
+<body class="bg-slate-900 font-sans text-slate-800 antialiased overflow-x-hidden">
+
+    <!-- Header / Navbar -->
+    <nav class="w-full bg-slate-900/95 backdrop-blur-sm border-b border-white/10 fixed top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-white font-serif text-2xl font-bold tracking-wider">
+                <i class="fa-solid fa-graduation-cap text-amber-500 mr-2"></i>Práxis <span class="text-amber-500">Educação</span>
+            </div>
+            <a href="#matricula" class="hidden md:inline-block bg-transparent border border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-white px-6 py-2 rounded-full transition duration-300 font-semibold text-sm tracking-wide">
+                GARANTIR VAGA
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-gradient-to-b from-slate-900 via-purple-950 to-slate-900">
+        <!-- Abstract Background Elements -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-20 pointer-events-none">
+            <div class="absolute -top-24 -right-24 w-96 h-96 bg-amber-500 rounded-full blur-3xl mix-blend-soft-light"></div>
+            <div class="absolute bottom-0 left-0 w-80 h-80 bg-purple-600 rounded-full blur-3xl mix-blend-soft-light"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <div class="inline-block mb-6 px-4 py-1 border border-amber-500/30 rounded-full bg-amber-500/10 backdrop-blur-md">
+                <span class="text-amber-400 text-xs font-bold uppercase tracking-widest">Formação de Elite para Educadores</span>
+            </div>
+            
+            <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+                Domine a Sala de Aula com <br>
+                <span class="text-gradient-gold italic">Autoridade e Segurança.</span>
+            </h1>
+            
+            <p class="font-sans text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                O embasamento teórico definitivo em <strong>Legislação, Metodologias e História</strong>. Fundamente sua prática pedagógica e blinde sua carreira contra inseguranças.
+            </p>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+                <a href="#matricula" class="w-full md:w-auto bg-gradient-to-r from-amber-500 to-amber-600 text-white font-bold py-4 px-10 rounded shadow-lg shadow-amber-500/20 hover:shadow-amber-500/40 hover:-translate-y-1 transition duration-300 uppercase tracking-wide">
+                    Quero Dominar a Teoria
+                </a>
+                <p class="text-slate-400 text-sm mt-4 md:mt-0 flex items-center gap-2">
+                    <i class="fa-solid fa-lock text-amber-500"></i> Pagamento Seguro
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- The Problem / Agitation (White Card Style) -->
+    <section class="py-20 bg-slate-100">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-white rounded-xl premium-shadow p-8 md:p-12 relative -mt-32 border-t-4 border-amber-500">
+                <h2 class="font-serif text-3xl text-slate-900 font-bold mb-6 text-center">
+                    Você sente que falta <span class="text-purple-900">embasamento</span> na hora de agir?
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8 mt-8">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-red-50 flex items-center justify-center">
+                            <i class="fa-solid fa-gavel text-red-400 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800 mb-2">Medo da Legislação</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">O receio constante de cometer erros normativos ou não saber defender suas escolhas pedagógicas frente à direção ou pais.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-red-50 flex items-center justify-center">
+                            <i class="fa-solid fa-chalkboard-user text-red-400 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800 mb-2">Aulas "Mais do Mesmo"</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">A sensação de estar estagnado no tempo, usando métodos antigos enquanto o mundo exige inovação ativa.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-10 p-6 bg-purple-50 rounded-lg border-l-4 border-purple-900">
+                    <p class="text-purple-900 font-serif italic text-lg text-center">
+                        "A prática sem teoria é cega. A teoria sem prática é estéril."
+                    </p>
+                    <p class="text-center text-sm text-purple-800 mt-2 font-bold">— Immanuel Kant (Adaptado ao contexto educacional)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Solution: 3 Pillars -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-amber-600 font-bold text-sm tracking-widest uppercase mb-2 block">O Tripé da Excelência</span>
+                <h2 class="font-serif text-4xl text-slate-900 font-bold">O que você vai dominar</h2>
+                <div class="w-24 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="card-hover bg-white border border-slate-200 rounded-xl p-8 text-center group hover:border-amber-400 transition-colors">
+                    <div class="w-20 h-20 mx-auto bg-purple-950 rounded-full flex items-center justify-center mb-6 group-hover:bg-amber-500 transition-colors duration-300 shadow-lg">
+                        <i class="fa-solid fa-scale-balanced text-3xl text-amber-400 group-hover:text-white"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-slate-800 mb-4">Legislações da Educação</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Entenda a LDB, BNCC e normativas vigentes. Tenha a <strong>segurança jurídica</strong> para atuar e argumentar com propriedade em qualquer ambiente escolar.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card-hover bg-white border border-slate-200 rounded-xl p-8 text-center group hover:border-amber-400 transition-colors">
+                    <div class="w-20 h-20 mx-auto bg-purple-950 rounded-full flex items-center justify-center mb-6 group-hover:bg-amber-500 transition-colors duration-300 shadow-lg">
+                        <i class="fa-solid fa-lightbulb text-3xl text-amber-400 group-hover:text-white"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-slate-800 mb-4">Metodologias Ativas</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Saia do quadro negro. Aprenda técnicas inovadoras (PBL, Sala de Aula Invertida, Gamificação) que geram <strong>engajamento real</strong> dos alunos.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card-hover bg-white border border-slate-200 rounded-xl p-8 text-center group hover:border-amber-400 transition-colors">
+                    <div class="w-20 h-20 mx-auto bg-purple-950 rounded-full flex items-center justify-center mb-6 group-hover:bg-amber-500 transition-colors duration-300 shadow-lg">
+                        <i class="fa-solid fa-landmark text-3xl text-amber-400 group-hover:text-white"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-slate-800 mb-4">História da Educação</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Compreenda a evolução do pensamento pedagógico. Saiba de onde viemos para projetar, com inteligência, <strong>o futuro da sua sala de aula</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transformation / Value Stack -->
+    <section class="py-20 bg-slate-900 relative">
+        <div class="absolute inset-0 bg-purple-900/10"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="w-full lg:w-1/2">
+                    <h2 class="font-serif text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                        Mais do que um curso,<br>uma <span class="text-amber-500">mudança de postura.</span>
+                    </h2>
+                    <p class="text-slate-300 text-lg mb-8 font-light">
+                        Esta formação foi desenhada para o educador que cansou de ser apenas "mais um" e deseja se posicionar como referência na sua instituição.
+                    </p>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check-circle text-amber-500 mt-1 mr-3"></i>
+                            <span class="text-slate-200">Conteúdo 100% atualizado com a BNCC.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check-circle text-amber-500 mt-1 mr-3"></i>
+                            <span class="text-slate-200">Material de apoio em PDF para consulta rápida.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check-circle text-amber-500 mt-1 mr-3"></i>
+                            <span class="text-slate-200">Acesso imediato por 1 ano ao conteúdo.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check-circle text-amber-500 mt-1 mr-3"></i>
+                            <span class="text-slate-200">Suporte pedagógico dedicado.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="w-full lg:w-1/2">
+                    <!-- Illustrative Composition using CSS/Icons -->
+                    <div class="relative bg-white rounded-lg p-8 shadow-2xl transform rotate-1 border-r-4 border-b-4 border-amber-500">
+                        <div class="absolute -top-4 -left-4 w-12 h-12 bg-purple-950 rounded flex items-center justify-center text-white font-bold">
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl text-slate-900 font-bold mb-4">Conteúdo Programático</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between p-3 bg-slate-50 rounded border border-slate-100">
+                                <span class="font-semibold text-slate-700">Módulo 01: Fundamentos Legais</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-slate-50 rounded border border-slate-100">
+                                <span class="font-semibold text-slate-700">Módulo 02: Evolução Histórica</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-slate-50 rounded border border-slate-100">
+                                <span class="font-semibold text-slate-700">Módulo 03: Práticas Inovadoras</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / Offer Section -->
+    <section id="matricula" class="py-24 bg-white relative overflow-hidden">
+        <!-- Decor element -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-amber-50 rounded-bl-full opacity-50"></div>
+        
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="font-serif text-4xl text-slate-900 font-bold mb-4">Invista na sua Carreira</h2>
+                <p class="text-slate-600 mb-10">O valor do conhecimento que te separa dos amadores.</p>
+                
+                <!-- Pricing Card -->
+                <div class="relative bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden">
+                    <!-- Top Ribbon -->
+                    <div class="bg-purple-950 py-4 text-white">
+                        <span class="font-bold tracking-widest uppercase text-sm">Oferta Exclusiva</span>
+                    </div>
+                    
+                    <div class="p-10 md:p-14">
+                        <div class="flex justify-center items-center gap-2 mb-2">
+                            <span class="text-slate-400 line-through text-lg">R$ 397,00</span>
+                            <span class="bg-green-100 text-green-700 text-xs font-bold px-2 py-1 rounded uppercase">Desconto Especial</span>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <span class="text-xl text-slate-600 align-top mt-2 inline-block">R$</span>
+                            <span class="text-6xl md:text-7xl font-serif font-bold text-slate-900">209</span>
+                            <span class="text-xl text-slate-600">,00</span>
+                        </div>
+                        
+                        <p class="text-slate-500 mb-8 text-sm">Pagamento único. 1 ano de acesso.</p>
+                        
+                        <button class="w-full bg-amber-500 hover:bg-amber-600 text-white text-lg font-bold py-5 px-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 mb-6 flex items-center justify-center gap-3">
+                            <span>QUERO ME INSCREVER AGORA</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                        
+                        <div class="flex items-center justify-center gap-4 text-xs text-slate-400">
+                            <span class="flex items-center gap-1"><i class="fa-regular fa-credit-card"></i> Cartão até 6x</span>
+                            <span class="flex items-center gap-1"><i class="fa-brands fa-pix"></i> PIX</span>
+                            <span class="flex items-center gap-1"><i class="fa-solid fa-barcode"></i> Boleto</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Bottom Guarantee -->
+                    <div class="bg-slate-50 p-4 border-t border-slate-100 flex items-center justify-center gap-3">
+                        <i class="fa-solid fa-shield-halved text-amber-500 text-xl"></i>
+                        <span class="text-slate-600 font-medium text-sm">Garantia incondicional de 7 dias.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="font-serif text-3xl text-slate-900 font-bold mb-10 text-center">Perguntas Frequentes</h2>
+            
+            <div class="space-y-4">
+                <details class="bg-white p-6 rounded-lg shadow-sm border border-slate-200 cursor-pointer group">
+                    <summary class="font-bold text-slate-800 flex justify-between items-center list-none">
+                        Por quanto tempo tenho acesso?
+                        <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down text-amber-500"></i></span>
+                    </summary>
+                    <p class="text-slate-600 mt-4 leading-relaxed">
+                        Você terá acesso completo à plataforma por 1 ano. Durante esse período, pode revisitar as aulas sobre legislação ou metodologias sempre que surgir uma dúvida na sua prática diária.
+                    </p>
+                </details>
+
+                <details class="bg-white p-6 rounded-lg shadow-sm border border-slate-200 cursor-pointer group">
+                    <summary class="font-bold text-slate-800 flex justify-between items-center list-none">
+                        Para quem é este curso?
+                        <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down text-amber-500"></i></span>
+                    </summary>
+                    <p class="text-slate-600 mt-4 leading-relaxed">
+                        Para estudantes de pedagogia e licenciaturas, professores atuantes, coordenadores pedagógicos e gestores que desejam aprofundar a base teórica de sua atuação.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-white/10">
+        <div class="container mx-auto px-6 text-center">
+            <div class="text-white font-serif text-2xl font-bold mb-6">
+                <i class="fa-solid fa-graduation-cap text-amber-500 mr-2"></i>Práxis <span class="text-amber-500">Educação</span>
+            </div>
+            <p class="text-sm mb-6">Elevando o padrão da educação brasileira através do conhecimento.</p>
+            <div class="flex justify-center gap-6 mb-8">
+                <a href="#" class="hover:text-amber-500 transition"><i class="fa-brands fa-instagram text-xl"></i></a>
+                <a href="#" class="hover:text-amber-500 transition"><i class="fa-brands fa-facebook text-xl"></i></a>
+                <a href="#" class="hover:text-amber-500 transition"><i class="fa-brands fa-whatsapp text-xl"></i></a>
+            </div>
+            <p class="text-xs text-slate-600">&copy; 2026 Formação Teórica. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

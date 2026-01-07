@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessoria Acadêmica Premium | Luciane Maldaner</title>
+    <meta name="description" content="Assessoria personalizada para pesquisadores. Transforme sua angústia acadêmica em rigor científico.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Playfair Display (Serifa Premium) e Lato (Leitura) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            300: '#F3E5AB',
+                            400: '#D4AF37',
+                            500: '#C5A028',
+                            600: '#B08D22',
+                        },
+                        royal: {
+                            950: '#130521', /* Fundo Principal (quase preto, tom beringela) */
+                            900: '#1E0B36', /* Fundo Secundário */
+                            800: '#2D124D', /* Cards */
+                            700: '#3D1B63', /* Bordas/Highlights */
+                            100: '#E6D9F5', /* Texto claro suave */
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Lato"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .hero-bg {
+            background-color: #130521;
+            background-image: radial-gradient(circle at 50% 50%, #2D124D 0%, #130521 100%);
+        }
+    </style>
+</head>
+<body class="bg-royal-950 text-royal-100 font-sans antialiased selection:bg-gold-500 selection:text-white">
+
+    <!-- Navbar Simples -->
+    <nav class="fixed w-full z-50 bg-royal-950/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="text-xl font-serif font-bold text-white tracking-wider">
+                    L. MALDANER
+                </div>
+                <a href="#investimento" class="hidden md:block bg-transparent border border-gold-400 text-gold-400 px-6 py-2 rounded-sm uppercase text-xs tracking-widest hover:bg-gold-400 hover:text-royal-950 transition-all duration-300">
+                    Reservar Assessoria
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg min-h-screen flex items-center justify-center pt-20 px-4 relative overflow-hidden">
+        <!-- Elemento decorativo de fundo -->
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-gold-400/5 blur-[120px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto text-center z-10 relative">
+            <div class="inline-block mb-6 px-3 py-1 border border-white/20 rounded-full bg-white/5 backdrop-blur-sm">
+                <span class="text-xs uppercase tracking-[0.2em] text-gold-300">Assessoria Premium Personalizada</span>
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-medium text-white mb-8 leading-tight">
+                Transforme a Angústia da Pesquisa em <br>
+                <span class="italic text-gold-400">Rigor Científico.</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-royal-100/80 max-w-2xl mx-auto mb-12 font-light leading-relaxed">
+                Pare de se sentir paralisado diante do "amontoado de dados". Torne-se um <strong class="text-white font-normal">Artesão Intelectual</strong> e conquiste sua aprovação no Mestrado, Doutorado ou TCC com método e estratégia.
+            </p>
+
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                <a href="#investimento" class="bg-gold-500 text-royal-950 px-8 py-4 rounded-sm font-bold uppercase tracking-widest hover:bg-white transition-all duration-300 w-full md:w-auto shadow-[0_0_20px_rgba(212,175,55,0.3)]">
+                    Quero Dominar Minha Pesquisa
+                </a>
+                <a href="#metodo" class="text-royal-100/70 hover:text-white underline decoration-1 underline-offset-4 text-sm tracking-wide transition-colors">
+                    Entender o Método
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- A Dor (O Problema) -->
+    <section class="py-20 bg-royal-900 border-t border-white/5">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-3xl font-serif text-white">A "Ferida" do Pesquisador Iniciante</h2>
+                    <p class="text-royal-100/80 leading-relaxed">
+                        Você enfrenta uma jornada solitária onde as teorias parecem nunca tocar o chão das exigências acadêmicas? Essa paralisia muitas vezes nasce de uma <strong>"onipotência inicial"</strong> que impede o foco no que é viável.
+                    </p>
+                    <p class="text-royal-100/80 leading-relaxed">
+                        A busca pelo mestrado ou doutorado não precisa ser uma fonte de angústia e desordem. O segredo não é apenas ter uma ideia, mas dominá-la com técnica.
+                    </p>
+                    <div class="flex items-center gap-4 pt-4">
+                        <div class="h-px w-12 bg-gold-400"></div>
+                        <span class="text-gold-400 font-serif italic">Da teoria à práxis</span>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gold-500/10 blur-3xl rounded-full"></div>
+                    <div class="relative bg-royal-800 p-8 border border-white/10 rounded-sm shadow-xl">
+                        <ul class="space-y-6">
+                            <li class="flex items-start gap-4">
+                                <i data-lucide="x-circle" class="text-red-400 w-6 h-6 mt-1 shrink-0"></i>
+                                <span class="text-royal-100/90">Sensação de paralisia e desorientação.</span>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <i data-lucide="x-circle" class="text-red-400 w-6 h-6 mt-1 shrink-0"></i>
+                                <span class="text-royal-100/90">Incerteza sobre a viabilidade do tema.</span>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <i data-lucide="x-circle" class="text-red-400 w-6 h-6 mt-1 shrink-0"></i>
+                                <span class="text-royal-100/90">Medo de reprovação em seleções de Stricto Sensu.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O Método (3 Encontros) -->
+    <section id="metodo" class="py-24 bg-royal-950 relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif text-white mb-4">A Jornada do Artesão Intelectual</h2>
+                <p class="text-royal-100/70">3 Encontros de 1 hora via Google Meet para estruturar seu sucesso.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-royal-900 p-8 border border-white/5 hover:border-gold-500/50 transition-colors duration-300 group shadow-lg">
+                    <div class="text-5xl font-serif text-gold-500/20 mb-6 group-hover:text-gold-500 transition-colors">01</div>
+                    <h3 class="text-xl font-serif text-white mb-4">O Alicerce</h3>
+                    <p class="text-gold-400 text-sm uppercase tracking-widest mb-4">Do Tema ao Problema</p>
+                    <ul class="space-y-3 text-royal-100/70 text-sm">
+                        <li class="flex gap-2"><span class="text-gold-500">•</span> Combate à "onipotência" inicial.</li>
+                        <li class="flex gap-2"><span class="text-gold-500">•</span> Delimitação precisa do tema.</li>
+                        <li class="flex gap-2"><span class="text-gold-500">•</span> Levantamento bibliográfico.</li>
+                        <li class="flex gap-2"><span class="text-gold-500">•</span> Formulação da pergunta empírica.</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-royal-900 p-8 border border-white/5 hover:border-gold-500/50 transition-colors duration-300 group relative transform md:-translate-y-4 shadow-xl shadow-royal-950/50">
+                    <div class="absolute top-0 right-0 bg-gold-500 text-royal-950 text-xs font-bold px-3 py-1 uppercase">Essencial</div>
+                    <div class="text-5xl font-serif text-gold-500/20 mb-6 group-hover:text-gold-500 transition-colors">02</div>
+                    <h3 class="text-xl font-serif text-white mb-4">A Estratégia</h3>
+                    <p class="text-gold-400 text-sm uppercase tracking-widest mb-4">Delineamento e Método</p>
+                    <ul class="space-y-3 text-royal-100/70 text-sm">
+                        <li class="flex gap-2"><span class="text-gold-500">•</span> Classificação (Exploratório, Descritivo, etc).</li>
+                        <li class="flex gap-2"><span class="text-gold-500">•</span> Fontes de papel vs. Fontes de gente.</li>
+                        <li class="flex gap-2"><span class="text-gold-500">•</span> Operacionalização de variáveis.</li>
+                        <li class="flex gap-2"><span class="text-gold-500">•</span> Critérios de amostragem.</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-royal-900 p-8 border border-white/5 hover:border-gold-500/50 transition-colors duration-300 group shadow-lg">
+                    <div class="text-5xl font-serif text-gold-500/20 mb-6 group-hover:text-gold-500 transition-colors">03</div>
+                    <h3 class="text-xl font-serif text-white mb-4">A Viabilidade</h3>
+                    <p class="text-gold-400 text-sm uppercase tracking-widest mb-4">Análise, Ética e Logística</p>
+                    <ul class="space-y-3 text-royal-100/70 text-sm">
+                        <li class="flex gap-2"><span class="text-gold-500">•</span> Plano de Análise (Quantitativo/Qualitativo).</li>
+                        <li class="flex gap-2"><span class="text-gold-500">•</span> Ética e Consentimento.</li>
+                        <li class="flex gap-2"><span class="text-gold-500">•</span> Cronograma e Orçamento.</li>
+                        <li class="flex gap-2"><span class="text-gold-500">•</span> Prevenção de "solução de continuidade".</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avisos Importantes (Disclaimer) -->
+    <section class="py-16 bg-royal-900 border-y border-white/5">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="bg-royal-950 p-8 border-l-4 border-gold-500 shadow-2xl">
+                <h3 class="text-xl font-serif text-white mb-6 flex items-center gap-2">
+                    <i data-lucide="alert-triangle" class="text-gold-400"></i>
+                    Avisos Importantes
+                </h3>
+                <div class="grid md:grid-cols-2 gap-8 text-sm">
+                    <div>
+                        <h4 class="text-white font-bold mb-2">O QUE EU FAÇO:</h4>
+                        <p class="text-royal-100/80">Orientação e mentoria metodológica. Desenvolvimento do seu "eu" pesquisador. Análise de editais para bolsas CAPES.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-red-400 font-bold mb-2">O QUE EU NÃO FAÇO:</h4>
+                        <p class="text-royal-100/80">Venda de projetos prontos, correção gramatical/ortográfica ou formatação ABNT. O foco é estritamente científico.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre a Mentora -->
+    <section class="py-20 bg-royal-950">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="w-24 h-24 mx-auto bg-gray-700 rounded-full mb-6 border-2 border-gold-400 overflow-hidden relative shadow-[0_0_15px_rgba(212,175,55,0.3)]">
+                <img src="LUCIANE MALDANER.jpg" alt="Luciane Maldaner" class="w-full h-full object-cover">
+            </div>
+            <h2 class="text-2xl font-serif text-white mb-2">Luciane Maldaner</h2>
+            <p class="text-gold-400 uppercase text-sm tracking-widest mb-6">Doutoranda & Mentora Acadêmica</p>
+            <p class="text-royal-100/70 max-w-2xl mx-auto italic text-lg leading-relaxed">
+                "O sucesso da sua carreira depende da união entre o seu desejo de conhecer e a técnica para agir. Vamos transformar sua teoria em práxis."
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA / Preço -->
+    <section id="investimento" class="py-24 bg-gradient-to-b from-royal-900 to-royal-950">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-serif text-white mb-8">Invista na Sua Carreira Acadêmica</h2>
+            
+            <div class="bg-royal-950 border border-gold-500/30 p-10 rounded-sm shadow-[0_0_50px_rgba(197,160,40,0.1)] relative overflow-hidden">
+                <!-- Badge -->
+                <div class="absolute top-0 right-0 bg-gold-500 text-royal-950 text-xs font-bold px-4 py-2">
+                    VAGAS LIMITADAS
+                </div>
+
+                <p class="text-royal-100/60 text-sm mb-4 uppercase tracking-widest">Assessoria Completa (3 Encontros)</p>
+                <div class="flex justify-center items-baseline gap-1 mb-2">
+                    <span class="text-2xl text-royal-100/50 font-serif">R$</span>
+                    <span class="text-6xl text-white font-serif font-bold">1.197</span>
+                    <span class="text-2xl text-royal-100/50 font-serif">,00</span>
+                </div>
+                <p class="text-gold-400 text-sm font-medium mb-8 tracking-wide">
+                    ou em até 6x no cartão
+                </p>
+
+                <div class="space-y-4 mb-10 text-left max-w-xs mx-auto text-royal-100/80 text-sm">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check" class="text-gold-400 w-4 h-4"></i>
+                        <span>3 Encontros Exclusivos (1h cada)</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check" class="text-gold-400 w-4 h-4"></i>
+                        <span>Análise de Editais (CAPES)</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check" class="text-gold-400 w-4 h-4"></i>
+                        <span>Suporte Metodológico Completo</span>
+                    </div>
+                </div>
+
+                <button class="w-full bg-gold-500 text-royal-950 font-bold py-4 px-8 rounded-sm hover:bg-white hover:scale-[1.02] transition-all duration-300 uppercase tracking-widest text-sm shadow-lg">
+                    Agendar Minha Assessoria
+                </button>
+                <p class="mt-4 text-xs text-royal-100/40">Pagamento seguro. Garantia de satisfação de 7 dias.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-royal-950 py-12 border-t border-white/5">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-royal-100/40 text-sm font-serif">
+                &copy; 2026 Luciane Maldaner. Todos os direitos reservados.<br>
+                Feito para o Artesão Intelectual.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Inicializa os ícones
+        lucide.createIcons();
+    </script>
+</body>
+</html>

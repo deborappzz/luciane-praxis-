@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Projeto de Pesquisa Base</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Google Fonts: Playfair Display for headers (Academic/Classic feel) & Lato for body -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Animations Configuration for Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        royal: {
+                            900: '#2e1065', /* Deep Purple */
+                            800: '#4c1d95',
+                        },
+                        gold: {
+                            400: '#fbbf24', /* Amber 400 */
+                            500: '#f59e0b', /* Amber 500 */
+                            600: '#d97706', /* Amber 600 */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    animation: {
+                        blob: "blob 7s infinite",
+                    },
+                    keyframes: {
+                        blob: {
+                            "0%": { transform: "translate(0px, 0px) scale(1)" },
+                            "33%": { transform: "translate(30px, -50px) scale(1.1)" },
+                            "66%": { transform: "translate(-20px, 20px) scale(0.9)" },
+                            "100%": { transform: "translate(0px, 0px) scale(1)" },
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+
+    <style>
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Hide scrollbar for clean look */
+        body {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        .text-gold-gradient {
+            background: linear-gradient(to right, #fbbf24, #d97706);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-white">
+
+    <!-- --- HERO SECTION --- -->
+    <header class="relative bg-purple-950 text-white overflow-hidden border-b-4 border-gold-500">
+        <!-- Abstract shapes for background -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-gold-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
+        <div class="absolute -bottom-8 -left-8 w-64 h-64 bg-purple-800 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+
+        <!-- --- NAV BAR / LOGO AREA --- -->
+        <nav class="relative z-20 max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
+            <!-- LOGO TEXT REPLACEMENT -->
+            <div class="text-2xl md:text-3xl font-bold font-serif text-white tracking-wide">
+                Práxis <span class="text-gold-500">Educação</span>
+            </div>
+            <div class="hidden md:block text-sm font-bold tracking-widest text-gold-400 uppercase font-serif">
+                Metodologia Científica
+            </div>
+        </nav>
+
+        <div class="max-w-6xl mx-auto px-6 pt-10 pb-24 relative z-10 flex flex-col md:flex-row items-center gap-12">
+            <div class="w-full md:w-3/5 space-y-6">
+                <div class="inline-block bg-gold-500/20 border border-gold-500/50 text-gold-400 px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase">
+                    Para Acadêmicos e Pesquisadores
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight font-serif">
+                    Deixe a confusão. Torne-se o <span class="text-gold-400 italic">Artesão Intelectual</span> da sua própria obra.
+                </h1>
+                <p class="text-lg md:text-xl text-slate-300 font-light max-w-lg leading-relaxed border-l-2 border-gold-500 pl-6">
+                    Um roteiro técnico para transformar ideias vagas em investigações com rigor científico. Formule problemas claros, defina objetivos factíveis e escolha o delineamento perfeito.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 pt-8">
+                    <button 
+                        onclick="document.getElementById('oferta').scrollIntoView({ behavior: 'smooth' })"
+                        class="bg-gold-500 hover:bg-gold-600 text-purple-950 font-bold py-4 px-8 rounded shadow-[0_0_20px_rgba(245,158,11,0.3)] transform transition hover:scale-105 flex items-center justify-center gap-2 cursor-pointer border border-gold-400"
+                    >
+                        Quero Dominar Meu Projeto
+                        <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                    </button>
+                    <p class="text-sm text-slate-400 mt-2 sm:mt-0 sm:self-center italic">
+                        *Acesso imediato ao material base.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Visual Hero Element -->
+            <div class="w-full md:w-2/5 hidden md:block">
+                <div class="relative bg-white/5 backdrop-blur-md border border-white/10 p-1 rounded-sm shadow-2xl transform rotate-3 hover:rotate-0 transition duration-500">
+                     <div class="bg-purple-900/80 p-8 border border-gold-500/30">
+                        <div class="space-y-6">
+                            <div class="h-1 bg-gold-500/50 rounded w-12 mb-4"></div>
+                            <div class="h-3 bg-white/20 rounded-sm w-full"></div>
+                            <div class="h-3 bg-white/20 rounded-sm w-5/6"></div>
+                            <div class="h-3 bg-white/20 rounded-sm w-4/6"></div>
+                            <div class="flex justify-center py-8">
+                                <div class="relative">
+                                    <div class="absolute inset-0 bg-gold-500 blur-xl opacity-20"></div>
+                                    <i data-lucide="compass" class="relative w-20 h-20 text-gold-400"></i>
+                                </div>
+                            </div>
+                            <div class="text-center text-gold-100 font-serif italic border-t border-white/10 pt-4">
+                                "Scientia Potentia Est"
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- --- PROBLEM AGITATION --- -->
+    <section class="py-24 bg-slate-50 relative">
+        <!-- Decoration -->
+        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gold-500"></div>
+
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-purple-950 mb-6 font-serif">
+                A Sensação de "Onipotência" está paralisando sua pesquisa?
+            </h2>
+            <p class="text-slate-600 text-lg leading-relaxed mb-16 max-w-2xl mx-auto">
+                Muitos pesquisadores iniciam seus projetos querendo "salvar o mundo" ou responder a todas as perguntas de uma vez. O resultado? Bloqueio criativo, objetivos inalcançáveis e uma metodologia confusa.
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-8 text-left">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 shadow-lg border-b-4 border-purple-900 hover:shadow-xl transition-shadow group">
+                    <div class="text-purple-900 mb-6 group-hover:scale-110 transition-transform duration-300"><i data-lucide="help-circle" class="w-10 h-10"></i></div>
+                    <h3 class="font-bold text-xl mb-3 font-serif text-slate-800">Ideias Vagas</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Dificuldade em transformar um tema amplo em uma pergunta de pesquisa científica precisa.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white p-8 shadow-lg border-b-4 border-gold-500 hover:shadow-xl transition-shadow group transform md:-translate-y-4">
+                    <div class="text-gold-600 mb-6 group-hover:scale-110 transition-transform duration-300"><i data-lucide="target" class="w-10 h-10"></i></div>
+                    <h3 class="font-bold text-xl mb-3 font-serif text-slate-800">Objetivos Irreais</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Metas inalcançáveis que geram frustração e inviabilizam o cronograma acadêmico.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white p-8 shadow-lg border-b-4 border-purple-900 hover:shadow-xl transition-shadow group">
+                    <div class="text-purple-900 mb-6 group-hover:scale-110 transition-transform duration-300"><i data-lucide="compass" class="w-10 h-10"></i></div>
+                    <h3 class="font-bold text-xl mb-3 font-serif text-slate-800">Metodologia Confusa</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Não saber se deve olhar para "papéis" ou "pessoas" para coletar seus dados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- THE SOLUTION (DETAILED) --- -->
+    <section class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-20">
+                <span class="text-gold-600 font-bold tracking-widest uppercase text-xs border-b border-gold-500 pb-1">Solução Acadêmica</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-purple-950 mt-6 font-serif">O Modelo de Projeto de Pesquisa</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="space-y-10">
+                    <!-- Feature 1 -->
+                    <div class="flex gap-6 group">
+                        <div class="flex-shrink-0 w-14 h-14 rounded-none bg-purple-50 border border-purple-100 flex items-center justify-center text-purple-900 group-hover:bg-purple-900 group-hover:text-gold-400 transition-colors duration-300 shadow-sm">
+                            <i data-lucide="brain" class="w-7 h-7"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 font-serif">Formulação Cirúrgica</h3>
+                            <p class="text-slate-600 mt-2 leading-relaxed">
+                                Diferencie problemas científicos de julgamentos morais. Transforme sua ideia em uma pergunta clara, precisa e <span class="text-purple-900 font-semibold">solucionável</span>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="flex gap-6 group">
+                        <div class="flex-shrink-0 w-14 h-14 rounded-none bg-gold-50 border border-gold-100 flex items-center justify-center text-gold-600 group-hover:bg-gold-500 group-hover:text-white transition-colors duration-300 shadow-sm">
+                            <i data-lucide="target" class="w-7 h-7"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 font-serif">Objetivos Factíveis</h3>
+                            <p class="text-slate-600 mt-2 leading-relaxed">
+                                Combata a "onipotência". O modelo ajuda a recortar a realidade e estabelecer metas que cabem no seu tempo e recursos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="flex gap-6 group">
+                        <div class="flex-shrink-0 w-14 h-14 rounded-none bg-purple-50 border border-purple-100 flex items-center justify-center text-purple-900 group-hover:bg-purple-900 group-hover:text-gold-400 transition-colors duration-300 shadow-sm">
+                            <i data-lucide="compass" class="w-7 h-7"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 font-serif">Delineamento Estratégico</h3>
+                            <p class="text-slate-600 mt-2 leading-relaxed">
+                                Decida sua estratégia com clareza. Sua pesquisa exige fontes de <strong>"papel"</strong> (bibliográfica/documental) ou <strong>"gente"</strong>?
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="flex gap-6 group">
+                        <div class="flex-shrink-0 w-14 h-14 rounded-none bg-gold-50 border border-gold-100 flex items-center justify-center text-gold-600 group-hover:bg-gold-500 group-hover:text-white transition-colors duration-300 shadow-sm">
+                            <i data-lucide="pen-tool" class="w-7 h-7"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 font-serif">Operacionalização</h3>
+                            <p class="text-slate-600 mt-2 leading-relaxed">
+                                Saia da teoria pura. O material orienta como transformar conceitos abstratos em indicadores observáveis na prática.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Callout Box -->
+                <div class="bg-purple-950 p-10 text-white relative shadow-2xl border-t-8 border-gold-500">
+                    <div class="absolute top-4 right-4 text-gold-500 opacity-20">
+                        <i data-lucide="quote" class="w-24 h-24"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-6 font-serif text-gold-400">Não vendemos peixe. Ensinamos a pescar.</h3>
+                    <p class="mb-6 text-purple-100 leading-relaxed font-light">
+                        <span class="text-gold-400 font-bold uppercase text-xs tracking-wider">Atenção:</span> Este não é um projeto pronto para ser copiado. Vender trabalhos prontos fere a ética acadêmica e impede seu crescimento.
+                    </p>
+                    <p class="mb-8 text-white font-serif italic text-lg border-l-2 border-gold-500 pl-4">
+                        "Nosso modelo é uma ferramenta de autonomia para o pesquisador sério."
+                    </p>
+                    <div class="bg-white/5 p-4 border border-white/10 flex items-center gap-4">
+                        <div class="bg-gold-500 p-2 rounded-full text-purple-950">
+                            <i data-lucide="book-open" class="w-5 h-5"></i>
+                        </div>
+                        <span class="font-medium text-sm text-gold-100">Guia definitivo para autonomia acadêmica.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- PRICING SECTION --- -->
+    <section id="oferta" class="py-24 bg-purple-950 text-white relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(#fbbf24 1px, transparent 1px); background-size: 30px 30px;"></div>
+        
+        <div class="max-w-3xl mx-auto px-6 relative z-10 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-4 font-serif">Invista na sua carreira</h2>
+            <p class="text-purple-200 text-xl mb-12 font-light">Menos tempo perdido, mais rigor científico.</p>
+
+            <div class="bg-white text-slate-800 rounded-none shadow-2xl overflow-hidden max-w-lg mx-auto transform transition hover:scale-105 duration-300 border-4 border-double border-gold-200">
+                <div class="bg-gold-500 py-3 border-b border-gold-600">
+                    <p class="text-purple-950 font-bold tracking-[0.2em] uppercase text-xs">Oferta Exclusiva</p>
+                </div>
+                <div class="p-10 md:p-14">
+                    <div class="flex justify-center items-baseline mb-6 text-purple-950">
+                        <span class="text-2xl mr-2 font-serif">R$</span>
+                        <span class="text-7xl font-bold font-serif tracking-tighter">109</span>
+                        <span class="text-2xl font-bold">,00</span>
+                    </div>
+                    <p class="text-slate-500 mb-8 font-medium text-sm uppercase tracking-wide">Pagamento único • Acesso vitalício</p>
+                    
+                    <div class="h-px w-full bg-slate-100 mb-8"></div>
+
+                    <ul class="text-left space-y-5 mb-10">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="text-gold-500 flex-shrink-0 w-5 h-5 mt-0.5"></i>
+                            <span class="text-slate-700">Estrutura completa de Projeto</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="text-gold-500 flex-shrink-0 w-5 h-5 mt-0.5"></i>
+                            <span class="text-slate-700">Guia de formulação de problemas</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="text-gold-500 flex-shrink-0 w-5 h-5 mt-0.5"></i>
+                            <span class="text-slate-700">Taxonomia para objetivos</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="text-gold-500 flex-shrink-0 w-5 h-5 mt-0.5"></i>
+                            <span class="text-slate-700">Matriz metodológica (Papel vs. Gente)</span>
+                        </li>
+                    </ul>
+
+                    <button class="w-full bg-purple-900 hover:bg-purple-800 text-white border border-transparent hover:border-gold-400 font-bold py-5 px-6 shadow-lg transition-all text-lg flex justify-center items-center gap-2 cursor-pointer group">
+                        <span class="group-hover:text-gold-400 transition-colors">Adquirir Modelo Agora</span>
+                        <i data-lucide="chevron-right" class="w-5 h-5 group-hover:text-gold-400 transition-colors"></i>
+                    </button>
+                    <div class="mt-6 flex justify-center gap-4 text-slate-400">
+                        <i data-lucide="shield-check" class="w-5 h-5"></i>
+                        <span class="text-xs">Compra 100% segura e criptografada.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- FAQ SECTION --- -->
+    <section class="py-24 bg-white">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-purple-950 mb-16 font-serif">Perguntas Frequentes</h2>
+            
+            <div class="space-y-4" id="faq-container">
+                <!-- FAQ ITEM 1 -->
+                <div class="border border-slate-200 rounded-none faq-item hover:border-gold-300 transition-colors">
+                    <button class="w-full flex justify-between items-center p-6 bg-slate-50 hover:bg-white transition-colors text-left faq-toggle">
+                        <span class="font-semibold text-purple-900 font-serif text-lg">O modelo serve para qual área?</span>
+                        <i data-lucide="chevron-down" class="text-slate-400 transition-transform duration-300 icon-arrow"></i>
+                    </button>
+                    <div class="faq-content hidden p-6 bg-white text-slate-600 border-t border-slate-100 leading-relaxed">
+                        O Modelo Base foca nos pilares do método científico universal (problema, objetivos, justificativa, método). Ele é aplicável à maioria das áreas das Ciências Humanas, Sociais e Aplicadas que exigem estruturação lógica de pensamento.
+                    </div>
+                </div>
+
+                <!-- FAQ ITEM 2 -->
+                <div class="border border-slate-200 rounded-none faq-item hover:border-gold-300 transition-colors">
+                    <button class="w-full flex justify-between items-center p-6 bg-slate-50 hover:bg-white transition-colors text-left faq-toggle">
+                        <span class="font-semibold text-purple-900 font-serif text-lg">Eu recebo um projeto escrito?</span>
+                        <i data-lucide="chevron-down" class="text-slate-400 transition-transform duration-300 icon-arrow"></i>
+                    </button>
+                    <div class="faq-content hidden p-6 bg-white text-slate-600 border-t border-slate-100 leading-relaxed">
+                        Não. Você recebe um guia estrutural e estratégico. O objetivo é que você preencha e desenvolva o conteúdo, garantindo que o trabalho seja autoral e legítimo.
+                    </div>
+                </div>
+
+                <!-- FAQ ITEM 3 -->
+                <div class="border border-slate-200 rounded-none faq-item hover:border-gold-300 transition-colors">
+                    <button class="w-full flex justify-between items-center p-6 bg-slate-50 hover:bg-white transition-colors text-left faq-toggle">
+                        <span class="font-semibold text-purple-900 font-serif text-lg">O que são fontes de 'papel' ou 'gente'?</span>
+                        <i data-lucide="chevron-down" class="text-slate-400 transition-transform duration-300 icon-arrow"></i>
+                    </button>
+                    <div class="faq-content hidden p-6 bg-white text-slate-600 border-t border-slate-100 leading-relaxed">
+                        É uma forma didática que utilizamos no guia para diferenciar Pesquisas Bibliográficas/Documentais (Papel) de Pesquisas de Campo/Estudos de Caso/Levantamentos (Gente). O guia ajuda você a escolher a melhor para o seu problema.
+                    </div>
+                </div>
+
+                <!-- FAQ ITEM 4 -->
+                <div class="border border-slate-200 rounded-none faq-item hover:border-gold-300 transition-colors">
+                    <button class="w-full flex justify-between items-center p-6 bg-slate-50 hover:bg-white transition-colors text-left faq-toggle">
+                        <span class="font-semibold text-purple-900 font-serif text-lg">Como recebo o acesso?</span>
+                        <i data-lucide="chevron-down" class="text-slate-400 transition-transform duration-300 icon-arrow"></i>
+                    </button>
+                    <div class="faq-content hidden p-6 bg-white text-slate-600 border-t border-slate-100 leading-relaxed">
+                        Imediatamente após a confirmação do pagamento, você receberá um e-mail com o link para download do material digital.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- FOOTER --- -->
+    <footer class="bg-purple-950 text-slate-400 py-16 border-t-4 border-gold-600">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-center md:text-left">
+                <h4 class="text-white font-bold text-2xl mb-2 font-serif">Práxis Educação</h4>
+                <p class="text-sm text-gold-500/80 uppercase tracking-widest">Desenvolvendo a autonomia do pesquisador</p>
+            </div>
+            <div class="flex gap-8 text-sm font-medium">
+                <a href="#" class="hover:text-gold-400 transition-colors">Termos de Uso</a>
+                <a href="#" class="hover:text-gold-400 transition-colors">Política de Privacidade</a>
+                <a href="#" class="hover:text-gold-400 transition-colors">Contato</a>
+            </div>
+        </div>
+        <div class="text-center mt-12 text-xs text-slate-600 border-t border-purple-900 pt-8 max-w-6xl mx-auto px-6">
+            &copy; <span id="year"></span> Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Set current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // FAQ Logic
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const content = faqItem.querySelector('.faq-content');
+                const icon = button.querySelector('.icon-arrow');
+                const isHidden = content.classList.contains('hidden');
+
+                // Close all others (optional)
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (item !== faqItem) {
+                        item.querySelector('.faq-content').classList.add('hidden');
+                        const otherIcon = item.querySelector('.icon-arrow');
+                        otherIcon.classList.remove('rotate-180', 'text-gold-500');
+                        otherIcon.classList.add('text-slate-400');
+                        // Reset bg color of header
+                        item.querySelector('button').classList.remove('bg-purple-50');
+                        item.querySelector('button').classList.add('bg-slate-50');
+                    }
+                });
+
+                if (isHidden) {
+                    content.classList.remove('hidden');
+                    icon.classList.add('rotate-180', 'text-gold-500');
+                    icon.classList.remove('text-slate-400');
+                    // Subtle highlight for active question
+                    button.classList.remove('bg-slate-50');
+                    button.classList.add('bg-purple-50');
+                } else {
+                    content.classList.add('hidden');
+                    icon.classList.remove('rotate-180', 'text-gold-500');
+                    icon.classList.add('text-slate-400');
+                    button.classList.add('bg-slate-50');
+                    button.classList.remove('bg-purple-50');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

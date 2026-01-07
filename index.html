@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práxis Educação | Com Prof. Luciane Maldaner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .font-serif {
+            font-family: 'Merriweather', serif;
+        }
+        .gradient-hero {
+            background: linear-gradient(135deg, #4c1d95 0%, #831843 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 14px 0 rgba(249, 115, 22, 0.39);
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(249, 115, 22, 0.23);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- HERO SECTION -->
+    <header class="gradient-hero text-white relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        
+        <div class="container mx-auto px-4 py-16 md:py-24 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <span class="inline-block py-1 px-3 rounded-full bg-pink-500/20 border border-pink-400 text-pink-200 text-sm font-semibold mb-6 tracking-wide uppercase">
+                    Para professores de História e Humanidades
+                </span>
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                    Pare de sacrificar seus domingos planejando aulas que os alunos <span class="text-orange-400">ignoram ou copiam da IA.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-purple-100 mb-8 font-serif italic max-w-2xl mx-auto">
+                    Acesso imediato a planos de aula da <strong>Práxis Educação</strong>: críticos, embasados e alinhados às demandas de 2026.
+                </p>
+                
+                <div class="flex justify-center">
+                    <button onclick="document.getElementById('planos').scrollIntoView({behavior: 'smooth'})" class="cta-button bg-orange-500 hover:bg-orange-600 text-white text-lg font-bold py-4 px-8 rounded-full flex items-center justify-center gap-2 transform hover:scale-105 transition duration-300">
+                        Quero recuperar meu tempo
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </button>
+                </div>
+
+                <div class="mt-12 flex justify-center items-center gap-6 text-sm text-purple-200">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="check-circle" class="text-pink-400 w-4 h-4"></i> BNCC 2026 Atualizada
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="check-circle" class="text-pink-400 w-4 h-4"></i> Fundamental & Médio
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="check-circle" class="text-pink-400 w-4 h-4"></i> Metodologias Ativas
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- THE PROBLEM (PAIN POINTS 2026) -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold text-center text-purple-900 mb-12">O cenário da sala de aula mudou.<br>Mas sua carga de trabalho só aumentou.</h2>
+                
+                <div class="space-y-8">
+                    <div class="flex gap-4 items-start">
+                        <div class="bg-pink-100 p-3 rounded-lg text-pink-600 shrink-0">
+                            <i data-lucide="alert-triangle" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-gray-800">A Guerra da Atenção</h3>
+                            <p class="text-gray-600 leading-relaxed">Seus alunos têm acesso a IAs e vídeos de 15 segundos. Tentar competir com o algoritmo usando planos de aula de 2020 é uma batalha perdida.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 items-start">
+                        <div class="bg-purple-100 p-3 rounded-lg text-purple-700 shrink-0">
+                            <i data-lucide="book-open" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-gray-800">A Complexidade Temática</h3>
+                            <p class="text-gray-600 leading-relaxed">Falar de Humanidades hoje exige cuidado cirúrgico. Você precisa de material que estimule o pensamento crítico, mas que seja pedagogicamente seguro e embasado academicamente.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 items-start">
+                        <div class="bg-orange-100 p-3 rounded-lg text-orange-600 shrink-0">
+                            <i data-lucide="clock" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-gray-800">A Exaustão do Planejamento</h3>
+                            <p class="text-gray-600 leading-relaxed">Você ama ensinar, mas odeia passar 4 horas de um sábado procurando fontes confiáveis para montar uma única aula de 50 minutos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE SOLUTION & AUTHORITY -->
+    <section id="sobre" class="py-20 bg-gradient-to-b from-purple-50 to-white overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- Image Placeholder -->
+                <div class="w-full md:w-1/2 relative">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-orange-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+                    <div class="absolute -bottom-8 -right-4 w-24 h-24 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white transform rotate-2 hover:rotate-0 transition duration-500">
+                        <!-- Foto da Luciane -->
+                        <img src="Luciane Mald.jfif" alt="Professora Luciane Maldaner" class="h-[500px] w-full object-cover">
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/2">
+                    <h4 class="text-orange-500 font-bold uppercase tracking-widest text-sm mb-2">Quem cria suas aulas</h4>
+                    <h2 class="text-3xl md:text-4xl font-bold text-purple-900 mb-6">Unindo a profundidade da Academia com a realidade do Chão da Escola.</h2>
+                    
+                    <div class="prose text-gray-600 mb-8 font-serif">
+                        <p class="mb-4">
+                            Olá, sou <strong>Luciane Maldaner</strong>. Sou Doutoranda em Educação, Mestra e Especialista em Ensino de Ciências Humanas pela UPF, além de Licenciada em História.
+                        </p>
+                        <p class="mb-4">
+                            Minha pesquisa é focada em Humanidades e Feminismo, o que me ensinou uma coisa fundamental: <em>o pensamento crítico não nasce do nada, ele é construído com método.</em>
+                        </p>
+                        <p>
+                            Criei a <strong>Práxis Educação</strong> porque cansei de ver colegas brilhantes abandonando a profissão por burnout. Eu faço a pesquisa pesada, estruturo a didática e entrego o ouro para você brilhar em sala de aula — seja no Ensino Fundamental ou Médio.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-purple-600">
+                            <p class="font-bold text-purple-900">Doutoranda</p>
+                            <p class="text-xs text-gray-500">Educação (UPF)</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-pink-500">
+                            <p class="font-bold text-pink-600">Especialista</p>
+                            <p class="text-xs text-gray-500">Feminismo e História</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT'S INSIDE -->
+    <section class="py-16 bg-purple-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">O que você recebe no Conexão Humanidades?</h2>
+            <p class="text-purple-200 text-lg mb-12 max-w-2xl mx-auto">
+                Roteiros prontos para imprimir ou projetar sobre os temas mais exigidos de 2026.
+            </p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+                <!-- Feature 1: Empreendedorismo -->
+                <div class="bg-purple-800/50 p-6 rounded-2xl hover:bg-purple-800 transition border border-purple-700">
+                    <div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="rocket" class="text-white w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Empreendedorismo Real</h3>
+                    <p class="text-purple-200 text-sm leading-relaxed">
+                        Vá além do "vender bolo no pote". Aulas sobre economia criativa, gestão social e inovação com propósito.
+                    </p>
+                </div>
+
+                <!-- Feature 2: Sustentabilidade -->
+                <div class="bg-purple-800/50 p-6 rounded-2xl hover:bg-purple-800 transition border border-purple-700">
+                    <div class="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="leaf" class="text-white w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Sustentabilidade</h3>
+                    <p class="text-purple-200 text-sm leading-relaxed">
+                        Análise crítica de dados ambientais, justiça climática e ações locais. Ciência aplicada, sem achismos.
+                    </p>
+                </div>
+
+                <!-- Feature 3: Feminismos -->
+                <div class="bg-purple-800/50 p-6 rounded-2xl hover:bg-purple-800 transition border border-purple-700">
+                    <div class="w-10 h-10 bg-pink-500 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="heart-handshake" class="text-white w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Feminismos</h3>
+                    <p class="text-purple-200 text-sm leading-relaxed">
+                        Uma abordagem histórica e sociológica sólida. Do sufragismo à interseccionalidade, tratado com a seriedade acadêmica.
+                    </p>
+                </div>
+
+                <!-- Feature 4: Comunicação -->
+                <div class="bg-purple-800/50 p-6 rounded-2xl hover:bg-purple-800 transition border border-purple-700">
+                    <div class="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="message-circle" class="text-white w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Comunicação e Discurso</h3>
+                    <p class="text-purple-200 text-sm leading-relaxed">
+                        Ensine a ler nas entrelinhas. Fake news, pós-verdade e análise de discurso midiático.
+                    </p>
+                </div>
+
+                <!-- Feature 5: Política -->
+                <div class="bg-purple-800/50 p-6 rounded-2xl hover:bg-purple-800 transition border border-purple-700">
+                    <div class="w-10 h-10 bg-purple-500 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="landmark" class="text-white w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Política e Cidadania</h3>
+                    <p class="text-purple-200 text-sm leading-relaxed">
+                        Instrumentos para entender o funcionamento do Estado e direitos civis, fugindo da polarização rasa.
+                    </p>
+                </div>
+
+                <!-- Feature 6: Trabalho -->
+                <div class="bg-purple-800/50 p-6 rounded-2xl hover:bg-purple-800 transition border border-purple-700">
+                    <div class="w-10 h-10 bg-yellow-500 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="briefcase" class="text-white w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Mundo do Trabalho</h3>
+                    <p class="text-purple-200 text-sm leading-relaxed">
+                        Muito além da carteira de trabalho. Precarização, uberização e o futuro das profissões.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION (MOVED UP) -->
+    <section class="py-16 bg-purple-50 border-b border-purple-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-purple-900 mb-12">Quem já transformou sua rotina em sala</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                
+                <!-- Testimonial 1 (Woman) -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-purple-100">
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Foto de Ana" class="w-12 h-12 rounded-full object-cover shadow-sm">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Ana T.</h4>
+                            <p class="text-xs text-purple-600 font-semibold">História - Ensino Médio</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm italic leading-relaxed">"Eu levava 3 horas pra montar uma aula de Revolução Francesa que fugisse do óbvio. Com o material da Luciane, em 15 minutos adaptei tudo. Os alunos amaram os vídeos sugeridos."</p>
+                    <div class="flex text-yellow-400 mt-4 gap-1">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 (Man) -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-purple-100">
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Foto de Carlos" class="w-12 h-12 rounded-full object-cover shadow-sm">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Carlos E.</h4>
+                            <p class="text-xs text-purple-600 font-semibold">Sociologia</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm italic leading-relaxed">"Sempre tive receio de abordar gênero em sala por causa da polarização. A segurança teórica que a Práxis traz, citando a BNCC linha por linha, me devolveu a paz pra lecionar."</p>
+                    <div class="flex text-yellow-400 mt-4 gap-1">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 (Woman) -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-purple-100">
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Foto de Mariana" class="w-12 h-12 rounded-full object-cover shadow-sm">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Mariana L.</h4>
+                            <p class="text-xs text-purple-600 font-semibold">Humanidades - Fund. II</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm italic leading-relaxed">"O que mais me impressionou foi a linguagem. Não é aquele 'academiquês' impossível, é didático mas profundo. Meus alunos do 9º ano estão debatendo como universitários."</p>
+                    <div class="flex text-yellow-400 mt-4 gap-1">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 (Man) -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-purple-100">
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Foto de Roberto" class="w-12 h-12 rounded-full object-cover shadow-sm">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Roberto G.</h4>
+                            <p class="text-xs text-purple-600 font-semibold">História - Rede Pública</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm italic leading-relaxed">"Trabalho em escola sem projetor. Achei que não ia servir, mas as sugestões 'low-tech' salvaram minha vida. Finalmente alguém que entende a realidade da escola pública."</p>
+                    <div class="flex text-yellow-400 mt-4 gap-1">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                </div>
+                
+                 <!-- Testimonial 5 (Woman) -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-purple-100">
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/29.jpg" alt="Foto de Fernanda" class="w-12 h-12 rounded-full object-cover shadow-sm">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Fernanda S.</h4>
+                            <p class="text-xs text-purple-600 font-semibold">Filosofia</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm italic leading-relaxed">"O workshop sobre Feminismo que vem no plano anual valeu o preço sozinho. Apliquei a dinâmica proposta na semana seguinte e foi a melhor aula do ano."</p>
+                    <div class="flex text-yellow-400 mt-4 gap-1">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 6 (Man) -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-purple-100">
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="Foto de Paulo" class="w-12 h-12 rounded-full object-cover shadow-sm">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Paulo B.</h4>
+                            <p class="text-xs text-purple-600 font-semibold">Geografia/Atualidades</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm italic leading-relaxed">"Recém-formado, eu estava perdido com a indisciplina. Os roteiros são tão amarradinhos que a aula flui e os alunos nem veem o tempo passar. Recomendo de olhos fechados."</p>
+                    <div class="flex text-yellow-400 mt-4 gap-1">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="planos" class="py-20 bg-slate-50 relative">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-purple-900 mb-4">Escolha como você quer transformar suas aulas</h2>
+                <p class="text-gray-600">Cancele quando quiser. Satisfação garantida.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto items-center">
+                
+                <!-- PLANO EXPRESS (MENSAL) -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition relative text-center">
+                    <h3 class="text-lg font-semibold text-gray-500 mb-2">Plano Mensal</h3>
+                    <div class="text-4xl font-bold text-purple-900 mb-2">R$ 44,90<span class="text-base font-normal text-gray-400">/mês</span></div>
+                    <p class="text-xs text-orange-500 font-semibold mb-4">Equivale a 1 cafezinho por dia ☕</p>
+                    <p class="text-sm text-gray-500 mb-6 pb-6 border-b">Acesso flexível para quem precisa de ajuda imediata.</p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center justify-center gap-2 text-sm text-gray-700 font-bold bg-green-50 py-1 px-2 rounded-full"><i data-lucide="check" class="w-4 h-4 text-green-500 shrink-0"></i> Teste 7 dias grátis</li>
+                        <li class="flex items-center justify-center gap-2 text-sm text-gray-700"><i data-lucide="check" class="w-4 h-4 text-green-500 shrink-0"></i> Acesso a 4 novos planos/mês</li>
+                        <li class="flex items-center justify-center gap-2 text-sm text-gray-700"><i data-lucide="check" class="w-4 h-4 text-green-500 shrink-0"></i> Suporte por e-mail</li>
+                    </ul>
+                    <button class="w-full py-3 rounded-lg border-2 border-purple-600 text-purple-600 font-bold hover:bg-purple-50 transition uppercase tracking-wide">Começar Agora</button>
+                </div>
+
+                <!-- PLANO ANUAL (DESTAQUE) -->
+                <div class="bg-white p-8 rounded-2xl shadow-2xl border-2 border-orange-400 transform md:-translate-y-4 relative z-10 text-center">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-orange-500 text-white px-4 py-1 rounded-full text-xs font-bold tracking-wide uppercase shadow-md whitespace-nowrap">
+                        Melhor Oferta • +2 Meses Grátis
+                    </div>
+                    <h3 class="text-lg font-semibold text-purple-600 mb-2">Plano Anual</h3>
+                    <div class="text-4xl font-bold text-purple-900 mb-2">R$ 27,90<span class="text-base font-normal text-gray-400">/mês</span></div>
+                    <p class="text-xs text-orange-600 font-bold mb-4">Economize R$ 204,00 no ano</p>
+                    <p class="text-sm text-gray-500 mb-6 pb-6 border-b">Investimento único de R$ 334,80. Garanta o ano letivo inteiro.</p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center justify-center gap-2 text-sm text-gray-800 font-semibold"><i data-lucide="check" class="w-5 h-5 text-orange-500 shrink-0"></i> Acesso TOTAL ao acervo</li>
+                        <li class="flex items-center justify-center gap-2 text-sm text-gray-800 font-semibold"><i data-lucide="check" class="w-5 h-5 text-orange-500 shrink-0"></i> Novos planos toda semana</li>
+                        <li class="flex items-center justify-center gap-2 text-sm text-gray-800 font-semibold"><i data-lucide="check" class="w-5 h-5 text-orange-500 shrink-0"></i> Bônus: Workshop "Feminismo em Sala"</li>
+                    </ul>
+                    <button class="w-full py-4 rounded-lg bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white font-bold shadow-lg transition transform hover:scale-105 uppercase tracking-wide">Selecionar Oferta</button>
+                </div>
+
+                <!-- PLANO SEMESTRAL -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition text-center">
+                    <h3 class="text-lg font-semibold text-gray-500 mb-2">Plano Semestral</h3>
+                    <div class="text-4xl font-bold text-purple-900 mb-2">R$ 34,90<span class="text-base font-normal text-gray-400">/mês</span></div>
+                    <p class="text-xs text-green-600 font-bold mb-4">Economize R$ 60,00</p>
+                    <p class="text-sm text-gray-500 mb-6 pb-6 border-b">Total de R$ 209,40 por semestre. Planejamento garantido.</p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center justify-center gap-2 text-sm text-gray-700 font-bold bg-purple-50 py-1 px-2 rounded-full"><i data-lucide="check" class="w-4 h-4 text-green-500 shrink-0"></i> Inclui Material Bônus</li>
+                        <li class="flex items-center justify-center gap-2 text-sm text-gray-700"><i data-lucide="check" class="w-4 h-4 text-green-500 shrink-0"></i> Acesso semestral ao acervo</li>
+                        <li class="flex items-center justify-center gap-2 text-sm text-gray-700"><i data-lucide="check" class="w-4 h-4 text-green-500 shrink-0"></i> Suporte prioritário</li>
+                    </ul>
+                    <button class="w-full py-3 rounded-lg border border-purple-200 text-purple-900 font-semibold hover:bg-purple-50 transition uppercase tracking-wide">Quero Economizar</button>
+                </div>
+
+            </div>
+            
+            <!-- Guarantee -->
+            <div class="max-w-3xl mx-auto mt-16 bg-white border border-purple-100 rounded-xl p-6 flex items-center gap-6 shadow-sm">
+                <div class="bg-purple-100 p-4 rounded-full text-purple-700 hidden md:block shrink-0">
+                    <i data-lucide="shield" class="w-8 h-8"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-purple-900 text-lg">Garantia Incondicional de 7 Dias</h4>
+                    <p class="text-sm text-gray-600">Assine, baixe os primeiros planos, aplique em sala. Se você não sentir que economizou horas de trabalho, eu devolvo 100% do seu dinheiro. Sem perguntas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ (SAC) SECTION -->
+    <section class="py-16 bg-white border-t border-purple-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-purple-900 mb-12">Perguntas Frequentes</h2>
+            <div class="max-w-3xl mx-auto space-y-6">
+                
+                <details class="group bg-slate-50 p-6 rounded-xl border border-gray-200 open:border-purple-300 transition-all cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-gray-800 list-none">
+                        <span>O material está atualizado com a BNCC de 2026?</span>
+                        <span class="transition group-open:rotate-180"><i data-lucide="chevron-down" class="w-5 h-5 text-purple-500"></i></span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 leading-relaxed">
+                        Sim! Todos os planos são revisados mensalmente para garantir total alinhamento com as competências da BNCC atualizada e as novas diretrizes do Ensino Médio.
+                    </p>
+                </details>
+
+                <details class="group bg-slate-50 p-6 rounded-xl border border-gray-200 open:border-purple-300 transition-all cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-gray-800 list-none">
+                        <span>Serve tanto para Ensino Fundamental quanto Médio?</span>
+                        <span class="transition group-open:rotate-180"><i data-lucide="chevron-down" class="w-5 h-5 text-purple-500"></i></span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 leading-relaxed">
+                        Exatamente. Na área de membros, você encontrará filtros específicos. Temos trilhas de aprofundamento para o Médio e sequências didáticas lúdicas e rigorosas para o Fundamental II.
+                    </p>
+                </details>
+
+                <details class="group bg-slate-50 p-6 rounded-xl border border-gray-200 open:border-purple-300 transition-all cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-gray-800 list-none">
+                        <span>Como recebo os materiais após a compra?</span>
+                        <span class="transition group-open:rotate-180"><i data-lucide="chevron-down" class="w-5 h-5 text-purple-500"></i></span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 leading-relaxed">
+                        O acesso é imediato e enviado para seu e-mail. Você terá login em nossa plataforma exclusiva "Práxis Educação", onde pode baixar os PDFs ou visualizar online.
+                    </p>
+                </details>
+
+                <details class="group bg-slate-50 p-6 rounded-xl border border-gray-200 open:border-purple-300 transition-all cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-gray-800 list-none">
+                        <span>E se eu tiver dúvidas sobre como aplicar a aula?</span>
+                        <span class="transition group-open:rotate-180"><i data-lucide="chevron-down" class="w-5 h-5 text-purple-500"></i></span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 leading-relaxed">
+                        Você não estará sozinho(a). Assinantes têm acesso a um canal de suporte pedagógico onde a própria Prof. Luciane e equipe respondem dúvidas sobre adaptações e abordagens.
+                    </p>
+                </details>
+
+                <details class="group bg-slate-50 p-6 rounded-xl border border-gray-200 open:border-purple-300 transition-all cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold text-gray-800 list-none">
+                        <span>Sou de escola pública, o material funciona na minha realidade?</span>
+                        <span class="transition group-open:rotate-180"><i data-lucide="chevron-down" class="w-5 h-5 text-purple-500"></i></span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 leading-relaxed">
+                        Com certeza. A Práxis Educação nasce do chão da escola. Nossos planos incluem variações para escolas com alta tecnologia e versões "low-tech" para quem tem apenas quadro e giz.
+                    </p>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-purple-950 text-purple-300 py-12 border-t border-purple-900">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="font-serif italic text-2xl text-white mb-6">"Ensinar é um ato político. Planejar é um ato de sobrevivência."</h2>
+            <div class="flex justify-center gap-6 mb-8">
+                <a href="https://www.instagram.com/praxis.educacao/" target="_blank" class="hover:text-white transition"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+                <a href="#" class="hover:text-white transition"><i data-lucide="mail" class="w-6 h-6"></i></a>
+                <a href="#" class="hover:text-white transition"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
+            </div>
+            <p class="text-sm opacity-60">© 2026 Práxis Educação | Prof. Luciane Maldaner. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
